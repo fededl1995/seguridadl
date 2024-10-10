@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    background-image: url("media/fondo2.jpg"); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina el margen por defecto del body */
+    font-family: 'Arial', sans-serif; /* Establece una fuente básica */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 0;
+    filter: brightness(0.7); /* Reduce el brillo del fondo */
+}
+
+/* Pantalla de inicio */
+.pantalla-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos del botón circular */
+.boton-circular {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    transition: transform 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.boton-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.boton-circular:hover {
+    transform: scale(1.1);
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    background-color: rgba(11, 55, 85, 0.8); /* Fondo semitransparente */
+    border-radius: 8px;
+}
+
+/* Estilos restantes (secciones, formulario, pie de página) */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #000000; /* Fondo blanco para las secciones */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.imagenes-galeria img {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.imagenes-galeria img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #35424a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #35424a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
