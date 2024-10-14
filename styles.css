@@ -1,17 +1,15 @@
 /* Estilos generales */
 body {
-    background-image: url("media/fondo2.jpg"); /* URL de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-position: center; /* Centra la imagen en la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    margin: 0; /* Elimina el margen por defecto del body */
-    font-family: 'Arial', sans-serif; /* Establece una fuente básica */
-    color: white; /* Cambia el color del texto a blanco */
+    background-image: url('URL_DE_TU_IMAGEN');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
     padding: 0;
-    filter: brightness(0.7); /* Reduce el brillo del fondo */
 }
 
-/* Pantalla de inicio */
 .pantalla-inicio {
     display: flex;
     justify-content: center;
@@ -19,7 +17,6 @@ body {
     height: 100vh;
 }
 
-/* Estilos del botón circular */
 .boton-circular {
     display: inline-block;
     width: 150px;
@@ -29,6 +26,7 @@ body {
     border: 3px solid #ffffff;
     transition: transform 0.3s, border-color 0.3s;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .boton-circular img {
@@ -42,29 +40,74 @@ body {
     transform: scale(1.1);
 }
 
-/* Contenido principal */
 main {
     padding: 20px;
-    background-color: rgba(11, 55, 85, 0.8); /* Fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos restantes (secciones, formulario, pie de página) */
+.campo-formulario {
+    margin-bottom: 15px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border-color: #007BFF;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
 section {
     margin: 20px 0;
     padding: 20px;
-    background: #000000; /* Fondo blanco para las secciones */
+    background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
-}
-
 h2 {
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #35424a;
+}
+
+.imagenes-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .imagenes-galeria img {
@@ -78,27 +121,6 @@ h2 {
     transform: scale(1.05);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #35424a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
 footer {
     text-align: center;
     padding: 20px 0;
@@ -107,4 +129,53 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 768px) {
+    .boton-circular {
+        width: 120px;
+        height: 120px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .imagenes-galeria img {
+        width: 45%;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 480px) {
+    .pantalla-inicio {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .boton-circular {
+        width: 100px;
+        height: 100px;
+    }
+
+    main {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .imagenes-galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes-galeria img {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
 }

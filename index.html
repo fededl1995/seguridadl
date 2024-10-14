@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones de Alarmas y Cámaras de Seguridad</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación con el archivo CSS -->
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div class="pantalla-inicio" id="pantalla-inicio">
+        <a href="#main" class="boton-circular" id="boton-iniciar">
+            <img src="https://branner.cl/wp-content/uploads/2019/05/cctv-2.jpg" alt="Botón de acceso">
+        </a>
+    </div>
+
+    <!-- Contenido principal (oculto inicialmente) -->
+    <main id="main" style="display: none;">
+        <header>
+            <div class="logo">
+                <h1>Seguridad Total</h1> <!-- Nombre o logo de la empresa -->
+            </div>
+            <nav>
+                <ul>
+                    <!-- Navegación principal -->
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido de las secciones -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos instalaciones de alarmas y cámaras de seguridad para proteger tu hogar y negocio.</p>
+            <ul>
+                <li>Instalación de alarmas</li>
+                <li>Instalación de cámaras de seguridad</li>
+                <li>Mantenimiento y soporte técnico</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+            <p>Explora nuestros proyectos recientes.</p>
+            <div class="imagenes-galeria">
+                <img src="alarma.jpeg" alt="Instalación de alarma">
+                <img src="imou bullet.jpeg" alt="Cámara de seguridad en instalación">
+                <img src="imou cruiser.jpeg" alt="Cámara de seguridad en instalación">
+                <img src="imou cue.jpeg" alt="Cámara de seguridad en instalación">
+                <img src="imou ranger.jpeg" alt="Cámara de seguridad en instalación">
+                <img src="kitx4.jpeg" alt="Cámara de seguridad en instalación">
+                <img src="kitx8.jpeg" alt="Cámara de seguridad en instalación">
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="index.php" method="POST">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seguridad Total - Todos los derechos reservados</p>
+        <p>Contacto: 123-456-7890 | email@ejemplo.com</p>
+    </footer>
+
+    <!-- Vinculación con el archivo JS -->
+    <script src="script.js"></script>
+</body>
+</html>
