@@ -18,9 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Formatear los datos para guardarlos
     $datos = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje\n\n";
 
+    // Definir la ruta donde quieres guardar el archivo
+    $rutaDestino = 'C:\Users\casii\Documents\GitHub'; // Cambia esto a tu ruta deseada
+
     // Crear un nombre de archivo único
     $fechaHora = date("Ymd_His");
-    $nombreArchivo = "datos_contacto_{$fechaHora}.txt";
+    $nombreArchivo = $rutaDestino . "datos_contacto_{$fechaHora}.txt"; // Agrega la ruta al nombre del archivo
 
     // Guardar los datos en un archivo
     if (file_put_contents($nombreArchivo, $datos) === false) {
