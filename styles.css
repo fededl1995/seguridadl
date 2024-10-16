@@ -121,6 +121,20 @@ h2 {
     transform: scale(1.05);
 }
 
+/* Íconos de redes sociales */
+.redes-sociales {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.redes-sociales img {
+    width: 40px; /* Tamaño de los íconos */
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle; /* Alinear verticalmente */
+}
+
+/* Estilo del footer */
 footer {
     text-align: center;
     padding: 20px 0;
