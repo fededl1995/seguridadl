@@ -47,50 +47,6 @@ main {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.campo-formulario {
-    margin-bottom: 15px;
-}
-
-.campo-formulario label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.campo-formulario input,
-.campo-formulario textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
-
-.campo-formulario input:focus,
-.campo-formulario textarea:focus {
-    border-color: #007BFF;
-}
-
-.campo-formulario textarea {
-    resize: vertical;
-    height: 100px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background: #0056b3;
-}
-
 section {
     margin: 20px 0;
     padding: 20px;
@@ -124,14 +80,20 @@ h2 {
 /* Íconos de redes sociales */
 .redes-sociales {
     margin-top: 20px;
-    text-align: center;
+    text-align: center; /* Centrar los íconos */
 }
 
 .redes-sociales img {
-    width: 40px; /* Tamaño de los íconos */
-    height: 40px;
-    margin-right: 10px;
+    width: 50px; /* Tamaño de los íconos */
+    height: 50px;
+    margin: 0 15px; /* Espaciado entre íconos */
     vertical-align: middle; /* Alinear verticalmente */
+    transition: transform 0.3s, filter 0.3s; /* Transiciones suaves */
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1); /* Efecto de aumento */
+    filter: brightness(1.2); /* Efecto de brillo */
 }
 
 /* Estilo del footer */
