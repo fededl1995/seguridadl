@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Configuración del contenedor de publicidad
     adContainer.classList.add("ad-container");
-    adImage.src = "ruta/a/tu/imagen/publicidad.jpg"; // Cambia esta ruta por la de tu imagen de publicidad
+    adImage.src = "https://raw.githubusercontent.com/fededl1995/seguridadl/main/media/publicidad.jpg"; // URL de la imagen de publicidad
     adImage.classList.add("ad-image");
     closeButton.innerText = "Cerrar";
     closeButton.classList.add("close-button");
@@ -31,18 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
         // Mostrar la publicidad emergente
         adContainer.style.display = "flex";
     });
-
-    // Añadir un evento para que la sección de contacto sea más fácil de usar
-    const formulario = document.querySelector("form");
-    if (formulario) {
-        formulario.addEventListener("submit", function (event) {
-            event.preventDefault(); // Evitar el envío por defecto
-
-            // Aquí podrías implementar una lógica adicional si lo deseas
-            alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.");
-            
-            // Opción para limpiar el formulario después de enviar
-            formulario.reset();
-        });
-    }
 });
